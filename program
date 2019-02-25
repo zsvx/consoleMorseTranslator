@@ -1,0 +1,255 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    // Starting translation choice
+    String newLine = System.getProperty("line.separator");
+    Scanner inp = new Scanner(System.in);
+    System.out.println(newLine + "Welcome to the morse translator." + newLine + "Will you be translating to morse or from morse?");
+    String userChoice = inp.nextLine();
+    String userInput = "";
+    // Error trapping if user inputs an invalid choice
+    do {
+        System.out.println("Please select a valid choice. ");
+        userChoice = inp.nextLine();
+        if ((userChoice.equalsIgnoreCase("to")) || (userChoice.equalsIgnoreCase("to morse")) || (userChoice.equalsIgnoreCase("From morse")) || (userChoice.equalsIgnoreCase("From"))) {
+          break;
+        }
+    } while ((!userChoice.equalsIgnoreCase("to morse")) || (!userChoice.equalsIgnoreCase("to")) || (!userChoice.equalsIgnoreCase("From morse")) || (!userChoice.equalsIgnoreCase("From")));
+    // To morse
+    if ((userChoice.equalsIgnoreCase("to morse")) || (userChoice.equalsIgnoreCase("to"))) {
+      System.out.println("Great. Please input a string one character at a time." + newLine + "Enter \"Done\" when you are complete.");
+      do {
+        userInput = inp.nextLine();
+        if (userInput.equalsIgnoreCase("A")) {
+          System.out.println(".-");
+        }
+        if (userInput.equalsIgnoreCase("B")) {
+          System.out.println("-...");
+        }
+        if (userInput.equalsIgnoreCase("C")) {
+          System.out.println("-.-.");
+        }
+        if (userInput.equalsIgnoreCase("D")) {
+          System.out.println("-..");
+        }
+        if (userInput.equalsIgnoreCase("E")) {
+          System.out.println(".");
+        }
+        if (userInput.equalsIgnoreCase("F")) {
+          System.out.println("..-.");
+        }
+        if (userInput.equalsIgnoreCase("G")) {
+          System.out.println("--.");
+        }
+        if (userInput.equalsIgnoreCase("H")) {
+          System.out.println("....");
+        }
+        if (userInput.equalsIgnoreCase("I")) {
+          System.out.println("..");
+        }
+        if (userInput.equalsIgnoreCase("J")) {
+          System.out.println(".---");
+        }
+        if (userInput.equalsIgnoreCase("K")) {
+          System.out.println("-.-");
+        }
+        if (userInput.equalsIgnoreCase("L")) {
+          System.out.println(".-..");
+        }
+        if (userInput.equalsIgnoreCase("M")) {
+          System.out.println("--");
+        }
+        if (userInput.equalsIgnoreCase("N")) {
+          System.out.println("-.");
+        }
+        if (userInput.equalsIgnoreCase("O")) {
+          System.out.println("---");
+        }
+        if (userInput.equalsIgnoreCase("P")) {
+          System.out.println(".--.");
+        }
+        if (userInput.equalsIgnoreCase("Q")) {
+          System.out.println("--.-");
+        }
+        if (userInput.equalsIgnoreCase("R")) {
+          System.out.println(".-.");
+        }
+        if (userInput.equalsIgnoreCase("S")) {
+          System.out.println("...");
+        }
+        if (userInput.equalsIgnoreCase("T")) {
+          System.out.println("-");
+        }
+        if (userInput.equalsIgnoreCase("U")) {
+          System.out.println("..-");
+        }
+        if (userInput.equalsIgnoreCase("V")) {
+          System.out.println("...-");
+        }
+        if (userInput.equalsIgnoreCase("W")) {
+          System.out.println(".--");
+        }
+        if (userInput.equalsIgnoreCase("X")) {
+          System.out.println("-..-");
+        }
+        if (userInput.equalsIgnoreCase("Y")) {
+          System.out.println("-.--");
+        }
+        if (userInput.equalsIgnoreCase("Z")) {
+          System.out.println("--..");
+        }
+        if (userInput.equalsIgnoreCase("1")) {
+          System.out.println(".----");
+        }
+        if (userInput.equalsIgnoreCase("2")) {
+          System.out.println("..---");
+        }
+        if (userInput.equalsIgnoreCase("3")) {
+          System.out.println("...--");
+        }
+        if (userInput.equalsIgnoreCase("4")) {
+          System.out.println("....-");
+        }
+        if (userInput.equalsIgnoreCase("5")) {
+          System.out.println(".....");
+        }
+        if (userInput.equalsIgnoreCase("6")) {
+          System.out.println("-....");
+        }
+        if (userInput.equalsIgnoreCase("7")) {
+          System.out.println("--...");
+        }
+        if (userInput.equalsIgnoreCase("8")) {
+          System.out.println("---..");
+        }
+        if (userInput.equalsIgnoreCase("9")) {
+          System.out.println("----.");
+        }
+        if (userInput.equalsIgnoreCase("0")) {
+          System.out.println("-----");
+        }
+        if ((userInput.equalsIgnoreCase("Done")) || (userInput.equalsIgnoreCase("Done."))) {
+          break;
+        }
+      } while ((!userInput.equalsIgnoreCase("Done")) || (!userInput.equalsIgnoreCase("Done.")));
+    } // From morse
+    if ((userChoice.equalsIgnoreCase("From morse")) || (userChoice.equalsIgnoreCase("From"))) {
+      System.out.println("Great. Please input a string one character at a time." + newLine + "Enter \"Done\" when you are complete.");
+      do {
+        userInput = inp.nextLine();
+        if (userInput.equalsIgnoreCase(".-")) {
+          System.out.println("A");
+        }
+        if (userInput.equalsIgnoreCase("-...")) {
+          System.out.println("B");
+        }
+        if (userInput.equalsIgnoreCase("-.-.")) {
+          System.out.println("C");
+        }
+        if (userInput.equalsIgnoreCase("-..")) {
+          System.out.println("D");
+        }
+        if (userInput.equalsIgnoreCase(".")) {
+          System.out.println("E");
+        }
+        if (userInput.equalsIgnoreCase("..-.")) {
+          System.out.println("F");
+        }
+        if (userInput.equalsIgnoreCase("--.")) {
+          System.out.println("G");
+        }
+        if (userInput.equalsIgnoreCase("....")) {
+          System.out.println("H");
+        }
+        if (userInput.equalsIgnoreCase("..")) {
+          System.out.println("I");
+        }
+        if (userInput.equalsIgnoreCase(".---")) {
+          System.out.println("J");
+        }
+        if (userInput.equalsIgnoreCase("-.-")) {
+          System.out.println("K");
+        }
+        if (userInput.equalsIgnoreCase(".-..")) {
+          System.out.println("L");
+        }
+        if (userInput.equalsIgnoreCase("--")) {
+          System.out.println("M");
+        }
+        if (userInput.equalsIgnoreCase("-.")) {
+          System.out.println("N");
+        }
+        if (userInput.equalsIgnoreCase("---")) {
+          System.out.println("O");
+        }
+        if (userInput.equalsIgnoreCase(".--.")) {
+          System.out.println("P");
+        }
+        if (userInput.equalsIgnoreCase("--.-")) {
+          System.out.println("Q");
+        }
+        if (userInput.equalsIgnoreCase(".-.")) {
+          System.out.println("R");
+        }
+        if (userInput.equalsIgnoreCase("...")) {
+          System.out.println("S");
+        }
+        if (userInput.equalsIgnoreCase("-")) {
+          System.out.println("T");
+        }
+        if (userInput.equalsIgnoreCase("..-")) {
+          System.out.println("U");
+        }
+        if (userInput.equalsIgnoreCase("...-")) {
+          System.out.println("V");
+        }
+        if (userInput.equalsIgnoreCase(".--")) {
+          System.out.println("W");
+        }
+        if (userInput.equalsIgnoreCase("-..-")) {
+          System.out.println("X");
+        }
+        if (userInput.equalsIgnoreCase("-.--")) {
+          System.out.println("Y");
+        }
+        if (userInput.equalsIgnoreCase("--..")) {
+          System.out.println("Z");
+        }
+        if (userInput.equalsIgnoreCase(".----")) {
+          System.out.println("1");
+        }
+        if (userInput.equalsIgnoreCase("..---")) {
+          System.out.println("2");
+        }
+        if (userInput.equalsIgnoreCase("...--")) {
+          System.out.println("3");
+        }
+        if (userInput.equalsIgnoreCase("....-")) {
+          System.out.println("4");
+        }
+        if (userInput.equalsIgnoreCase(".....")) {
+          System.out.println("5");
+        }
+        if (userInput.equalsIgnoreCase("-....")) {
+          System.out.println("6");
+        }
+        if (userInput.equalsIgnoreCase("--...")) {
+          System.out.println("7");
+        }
+        if (userInput.equalsIgnoreCase("---..")) {
+          System.out.println("8");
+        }
+        if (userInput.equalsIgnoreCase("----.")) {
+          System.out.println("9");
+        }
+        if (userInput.equalsIgnoreCase("-----")) {
+          System.out.println("0");
+        }
+        if ((userInput.equalsIgnoreCase("Done")) || (userInput.equalsIgnoreCase("Done."))) {
+          break;
+        }
+      } while ((!userInput.equalsIgnoreCase("Done")) || (!userInput.equalsIgnoreCase("Done.")));
+    }
+  }
+}
